@@ -1,0 +1,194 @@
+
+.viewmatch-box {
+    margin: 2px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 100%;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    background-color: #b4c1b4;
+    position: relative;
+}
+
+/* Navigation bar */
+.navbar-match {
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+
+    
+}
+
+/* List items in the navigation bar */
+.match-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-match {
+    margin-right: 10px;
+}
+
+.menu-match a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu-match:hover a,
+.menu-match.active a {
+    background-color: #555;
+}
+
+/* Active menu item */
+.menu-match.active a {
+    background-color: #4CAF50;
+}
+
+
+.match-content-live {
+    border: 1px solid rgb(171, 169, 169);
+}
+
+.match-date-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 10px;
+    
+    
+}
+.date-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 5px 10px;
+    
+    
+    
+}
+.match-content-live {
+    display: flex;
+    gap: 300px;
+}
+.main-result-local {
+}
+.result-local-container {
+    margin-right: 12px;
+    margin-top: 10px;
+    
+}
+.top-result {
+    width: 1171px;
+}
+.top-result h6 span {
+    margin-left: 800px;
+    text-decoration: none;
+}
+.see-all {
+    text-decoration: none;
+    color: black;
+}
+.top-result, .left-col-result, .right-col-result {
+    border: 1px solid gray;
+    padding: 10px;
+}
+.bottom-result {
+    display: flex;
+    
+}
+.left-col-result {
+
+}
+.right-col-result {
+    
+}
+.line {
+    border-bottom: 1px solid gray; 
+    margin-bottom: 5px;
+    
+}
+.info-border {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px 0px;
+    border-color: #333;
+
+}
+
+.search-match {
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+.city-inf {
+    margin-left: 576px;
+}
+
+.search-match label {
+    margin-right: 10px;
+}
+
+.match-info-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.match-info-1 > div {
+    flex: 1;
+}
+
+.description-match-info {
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+
+.description-match-info p {
+    margin-bottom: 5px;
+}
+
+.download-schedule {
+ background-color: rgb(95, 32, 221);
+ padding: 5px 10px;
+ color: #ccc;
+ font-weight: 900;
+ margin-left: 800px;
+ margin-top: 50px;
+ border-radius: 3px;
+}
+
+.download-schedule:hover {
+    background-color: rgb(14, 33, 241);
+    color: rgb(238, 243, 247);
+}
+.main-cricket-score {
+
+}
+.live-box-inf {
+    box-sizing: border-box;
+    height: 500px;
+    width: 500px;
+    border: 1px solid gray;
+    margin-top: 10px;
+}
+.live-box-inf h6 {
+    margin: 10px 10px;
+    
+}

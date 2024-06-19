@@ -1,0 +1,131 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* General styles */
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.main-container-view {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  min-height: 90vh;
+  background: #7f7fd5;
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  padding: 10px;
+}
+
+.container-view {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure items stay in a single row */
+  justify-content: flex-start;
+  max-width: 78%; /* Allow container to expand */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 2rem;
+  padding: 20px 0;
+  position: relative;
+  margin-left: 20px;
+  scroll-behavior: smooth;
+}
+.container-view::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  flex: 0 0 auto;
+  /* width: clamp(20rem, calc(20rem + 2vw), 22rem); */
+  width: 330px;
+
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ece9e6;
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+  margin-right: 2rem; /* Spacing between cards */
+}
+
+.card img {
+  width: 100%; /* Ensure image fills the container */
+  height: 200px;
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 1em 1em 0 0; /* Rounded corners for top */
+}
+
+.card__body {
+  padding: 1rem;
+}
+
+.tag {
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag-blue {
+  background: #56ccf2;
+  color: #fafafa;
+}
+
+.tag-view {
+  background: #b2cadd;
+  color: #131212;
+}
+
+.tag-red {
+  background: #cb2d3e;
+  color: #fafafa;
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+.add-button,
+.view-button {
+  position: absolute;
+  top: 90px;
+  right: 10px;
+  z-index: 999;
+  padding: 10px 20px;
+  background-color: antiquewhite;
+  font-size: 17px;
+  font-weight: 700;
+  border-bottom: 5px solid gray;
+  border-left: 5px solid gray;
+}
+
+.view-button {
+  top: 160px;
+  padding: 8px 16px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .container-view {
+    padding: 20px; /* Add padding for smaller screens */
+  }
+  
+  .card {
+    margin-right: 1rem; /* Reduce spacing between cards */
+  }
+
+  .add-button,
+  .view-button {
+    position: static;
+    margin-top: 20px; /* Move buttons below cards */
+    width: 100%; /* Make buttons full-width */
+    text-align: center; /* Center-align text */
+  }
+}
